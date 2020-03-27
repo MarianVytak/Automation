@@ -1,1 +1,151 @@
 .header {}
+
+.header__top {
+  background-color: $gray;
+}
+
+.header__top_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30px;
+}
+
+.header__top_list_item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__top_list_item_link {
+  font-weight: bold;
+  color: $white;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__login_icon {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+}
+
+.header__login_name {
+  margin-right: 5px;
+  color: $white;
+}
+
+.header__login_link {
+  color: $red;
+}
+
+.header__mid_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 67px;
+}
+
+.header__mid_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  position: relative;
+  top: -5px;
+}
+
+.logo-text {
+  margin-left: 25px;
+  color: $gray;
+}
+
+.header__mid_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__mid_email {
+  margin-right: 65px;
+  color: $gray;
+}
+
+.header__mid_tel {
+  margin-right: 45px;
+  font-weight: bold;
+  font-size: 17px;
+  color: $gray;
+}
+
+.header__mid_btn {
+  width: 180px;
+}
+
+.header__bot {
+  background-color: $blue;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation_item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__navigation_item_link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: $white;
+  white-space: nowrap;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $red;
+  }
+  &:hover {
+    color: $red;
+  }
+  &.active {
+    color: $red;
+    &:before {
+      display: block;
+    }
+  }
+}
+
+.header__navigation_search {
+  margin: 0 30px 0 85px;
+}
+
+.header__navigation_search_link {
+  width: 78px;
+  font-weight: bold;
+  img {
+    margin-left: 4px;
+  }
+}
