@@ -15,6 +15,30 @@ body {
   box-sizing: border-box;
 }
 
+.close {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $red;
+  }
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
 img {
   width: auto;
   max-width: 100%;

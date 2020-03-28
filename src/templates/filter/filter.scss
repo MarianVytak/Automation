@@ -1,6 +1,21 @@
 .filter {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  position: relative;
+  min-height: calc(100vh - 136px);
   padding: 0 15px 50px;
+  box-sizing: border-box;
   background-color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 10000px;
+    height: 100%;
+    background-color: $white;
+  }
 }
 
 .filter__title {

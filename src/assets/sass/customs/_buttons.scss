@@ -3,12 +3,24 @@
   align-items: center;
   justify-content: center;
   height: 29px;
+  box-sizing: border-box;
   border-radius: 10px;
   color: $white;
   &.btn-red {
     background-color: $red;
+    &.btn-outline {
+      border: 1px solid $red;
+      background-color: #ffe9e9;
+      color: $red;
+    }
   }
   &.btn-gray {
     background-color: $gray;
+  }
+  &.w-100 {
+    width: 100%;
+  }
+  &.btn-bold {
+    font-weight: bold;
   }
 }

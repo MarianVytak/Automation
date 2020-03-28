@@ -1,0 +1,143 @@
+.position {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  padding: 0 15px 50px;
+  box-sizing: border-box;
+}
+
+.position__title {
+  height: 60px;
+  padding: 30px 0 10px;
+  box-sizing: border-box;
+}
+
+.position__list_system {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.system__title {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(top, transparent 0px, transparent 14px, $gray 14px, transparent 15px);
+  font-style: italic;
+  line-height: 15px;
+  color: $blue;
+}
+
+.system__title_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.system__info_list_item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.system__info {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 32px 25px;
+  display: grid;
+  grid-template-columns: 1fr 32px 25px;
+  &.required {
+    .system__info_name {
+      color: $red;
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.system__info_name {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  padding-right: 15px;
+  color: $blue;
+}
+
+.system__info_count {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+
+.system__info_close {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.system__info_price {
+  margin-top: 3px;
+  color: $gray;
+}
+
+.system__sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: $gray;
+}
+
+.system__sum_title {
+  font-weight: bold;
+}
+
+.system__delete {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  font-weight: bold;
+  color: $red;
+  cursor: pointer;
+  .close {
+    margin-right: 5px;
+  }
+}
+
+.position__sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 5px 0;
+  border-top: 1px solid #d6dadd;
+}
+
+.position__sum_title {
+  font-weight: bold;
+  color: $blue;
+}
+
+.position__sum_value {
+  color: $gray;
+}
+
+.position__btn_add-system {
+  margin-top: 25px;
+}
+
+.position__btn_kp {
+  margin-top: 25px;
+}
+
+.position__btn_score {
+  margin-top: 5px;
+}
