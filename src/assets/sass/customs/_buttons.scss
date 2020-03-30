@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 280px;
   height: 29px;
+  margin: 0 auto;
   box-sizing: border-box;
   border-radius: 10px;
   color: $white;
