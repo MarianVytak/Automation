@@ -18,6 +18,10 @@
   }
 }
 
+.filter__close {
+  display: none;
+}
+
 .filter__title {
   height: 60px;
   padding: 30px 15px 10px;
@@ -26,7 +30,8 @@
 
 .filter__dropdown {
   margin-bottom: 10px;
-  padding: 15px;
+  //padding: 15px;
+  padding: 0 15px;
   border-radius: 10px;
   background-color: #f3f7fa;
   &:last-child {
@@ -35,17 +40,17 @@
 }
 
 .filter__dropdown_title {
+  padding: 15px 0;
   font-weight: bold;
   color: $blue;
 }
 
 .filter__dropdown_list_item {
-  margin-top: 15px;
-  padding-top: 15px;
   border-top: 1px solid #d6dadd;
 }
 
 .filter__dropdown_subtitle {
+  padding: 15px 0;
   color: $blue;
 }
 
@@ -53,6 +58,9 @@
   margin-top: 15px;
   margin-bottom: 5px;
   color: $gray;
+  &:first-child {
+    margin-top: 0;
+  }
   &.active {
     &:before {
       border-color: transparent transparent #afb6bb transparent;
@@ -65,6 +73,7 @@
 
 .filter__dropdown_radios {
   padding-left: 15px;
+  padding-bottom: 15px;
 }
 
 .filter__dropdown_radios_sub-content {
@@ -73,23 +82,4 @@
 
 
 
-/* ## Media
-====================*/
-@media (max-width: 991.98px) {
-  .filter {
-    -ms-grid-column: 1;
-    -ms-grid-row: 1;
-    min-height: auto;
-    padding: 0 15px 30px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .filter {
-    padding: 15px 0;
-  }
-  .filter__title {
-    height: auto;
-    padding: 0 0 10px;
-  }
-}
+@import "media";

@@ -1,14 +1,18 @@
 <div class="header">
 
-    <div class="header__top">
+    <a href="#header-top" class="header__top_mobile dropdown-link">
+        <div class="header__login">
+            <div class="header__login_icon">
+                <img src="../../assets/img/icons/lock.png" alt="">
+            </div>
+            <div class="header__login_name">Александров И.Е.</div>
+        </div>
+    </a>
+    <!-- /.header__top_mobile -->
+
+    <div class="header__top dropdown-content" id="header-top">
         <div class="container">
             <ul class="header__top_list">
-                <li class="hamburger">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </li>
                 <li class="header__top_list_item">
                     <a href="#" class="header__top_list_item_link">Мой профиль</a>
                 </li>
@@ -23,7 +27,7 @@
                         <img src="../../assets/img/icons/lock.png" alt="">
                     </div>
                     <div class="header__login_name">Александров И.Е.</div>
-                    <a href="#" class="header__login_link"> | Выйти</a>
+                    <a href="#" class="header__login_link"> <span>|</span> Выйти</a>
                 </li>
             </ul>
             <!-- /.header__top_list -->
@@ -48,6 +52,11 @@
                     <a href="mailto:info@gkavtomatika.ru" class="header__mid_email">info@gkavtomatika.ru</a>
                     <a href="tel:+78129850550" class="header__mid_tel">+7 (812) 985-05-50</a>
                     <a href="#" class="header__mid_btn btn btn-red">Заказать звонок</a>
+                    <div class="hamburger js-menu-link" data-target="#header-bot">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,9 +64,10 @@
     </div>
     <!-- /.header__mid -->
 
-    <div class="header__bot">
+    <div class="header__bot js-menu" id="header-bot">
         <div class="container">
             <ul class="header__navigation">
+                <li class="header__navigation_close menu-close" data-target="#header-bot"></li>
                 <li class="header__navigation_item">
                     <a href="#" class="header__navigation_item_link active">Вентиляция</a>
                 </li>
@@ -68,10 +78,8 @@
                     <a href="#" class="header__navigation_item_link">Противопожарная вентиляция</a>
                 </li>
                 <li class="header__navigation_item header__navigation_search">
-                    <a href="#" class="header__navigation_search_link btn btn-gray">
-                        Поиск
-                        <img src="../../assets/img/icons/search.png" alt="">
-                    </a>
+                    <input type="search" class="header__navigation_search_input" placeholder="Поиск">
+                    <img class="header__navigation_search_icon" src="../../assets/img/icons/search.png" alt="">
                 </li>
                 <li class="header__navigation_item">
                     <a href="#" class="header__navigation_item_link">Доставка и оплата</a>
@@ -82,11 +90,36 @@
                 <li class="header__navigation_item">
                     <a href="#" class="header__navigation_item_link">Контакты</a>
                 </li>
+                <li class="header__navigation_item_mobile">
+                    <a href="mailto:info@gkavtomatika.ru" class="header__navigation_item_mobile_link">info@gkavtomatika.ru</a>
+                </li>
+                <li class="header__navigation_item_mobile">
+                    <a href="tel:+78129850550" class="header__navigation_item_mobile_link">+7 (812) 985-05-50</a>
+                </li>
+                <li class="header__navigation_item_mobile">
+                    <a href="#" class="btn btn-red w-100">Заказать звонок</a>
+                </li>
             </ul>
         </div>
         <!-- /.container -->
     </div>
     <!-- /.header__bot -->
+
+    <div class="header__bot_mobile">
+        <div class="header__bot_mobile_filter js-menu-link" data-target="#filter">Фильтры и товары</div>
+        <div class="header__bot_mobile_search">
+            <input type="search" placeholder="Поиск по товарам" class="header__bot_mobile_search_input">
+            <div class="header__bot_mobile_search_icon">
+                <img src="../../assets/img/icons/search-gray.png" alt="">
+            </div>
+            <div class="header__bot_mobile_search_close close"></div>
+        </div>
+        <div class="header__bot_mobile_basket js-menu-link" data-target="#position">
+            <img src="../../assets/img/icons/basket.png" alt="">
+            <span class="header__bot_mobile_basket_value">25</span>
+        </div>
+    </div>
+    <!-- /.header__bot_mobile -->
 
 </div>
 <!-- /.header -->

@@ -10,14 +10,24 @@
   color: $white;
   &.btn-red {
     background-color: $red;
+    &:hover {
+      background-color: darken($red, 5);
+    }
     &.btn-outline {
       border: 1px solid $red;
       background-color: #ffe9e9;
       color: $red;
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
     }
   }
   &.btn-gray {
     background-color: $gray;
+    &:hover {
+      background-color: darken($gray, 5);
+    }
   }
   &.w-100 {
     width: 100%;

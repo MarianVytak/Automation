@@ -1,0 +1,35 @@
+@media (max-width: 991.98px) {
+  .position {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 350px;
+    max-width: 80%;
+    height: 100vh;
+    min-height: auto;
+    padding: 0 15px 30px;
+    background-color: $white;
+    overflow-y: auto;
+    z-index: 3;
+    transition: .3s;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .position__close {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .position {
+    padding: 25px 10px;
+  }
+  .position__title {
+    height: auto;
+    padding: 0 0 10px;
+  }
+}
