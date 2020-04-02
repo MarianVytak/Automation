@@ -87,6 +87,7 @@
   text-decoration: underline;
   &:hover {
     text-decoration: underline;
+    color: darken($red, 10);
   }
   &:before {
     display: none;
