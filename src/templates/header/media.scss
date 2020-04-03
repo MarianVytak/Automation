@@ -45,6 +45,13 @@
   .header__navigation_search {
     display: none;
   }
+  .header__navigation_item_link {
+    &.active {
+      &:before {
+      display: none;
+    }
+    }
+  }
   .header__navigation_item_mobile {
     display: flex;
     align-items: center;
@@ -88,6 +95,13 @@
     margin-right: 0;
     padding: 5px 0;
   }
+  .header__top_list_item_link {
+    &.active {
+      &:before {
+        display: none;
+      }
+    }
+  }
   .header__mid_block {
     height: 60px;
   }
@@ -117,8 +131,11 @@
         width: 100%;
         padding-right: 10px;
       }
+      .header__bot_mobile_search_btn {
+        display: block;
+      }
       .header__bot_mobile_search_icon {
-        right: 30px;
+        display: none;
       }
       .header__bot_mobile_search_input {
         padding: 0 50px 0 10px;

@@ -29,6 +29,12 @@
       background-color: darken($gray, 5);
     }
   }
+  &.btn-blue {
+    background-color: $blue;
+    &:hover {
+      background-color: darken($blue, 5);
+    }
+  }
   &.w-100 {
     width: 100%;
   }
