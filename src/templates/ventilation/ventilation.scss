@@ -27,10 +27,14 @@
 
 .ventilation__filters_item {
   margin-right: 15px;
+}
+
+.ventilation__filters_item_link {
   font-size: 11px;
   color: $gray;
-  span {
-    cursor: pointer;
+  transition: .3s;
+  &:hover {
+    color: darken($gray, 25);
   }
 }
 
@@ -121,7 +125,3 @@
     border-color: transparent transparent transparent $white;
   }
 }
-
-
-
-@import "media";
