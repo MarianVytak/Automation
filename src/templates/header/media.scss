@@ -38,6 +38,10 @@
     display: block;
     margin: 0 -10px;
     padding-top: 35px;
+    padding-right: 0;
+  }
+  .header__navigation_list {
+    display: block;
   }
   .header__navigation_close {
     display: block;
@@ -138,7 +142,7 @@
         display: none;
       }
       .header__bot_mobile_search_input {
-        padding: 0 50px 0 10px;
+        padding: 0 105px 0 10px;
         font-size: 13px;
       }
       .header__bot_mobile_search_close {

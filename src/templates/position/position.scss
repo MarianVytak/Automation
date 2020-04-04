@@ -63,7 +63,7 @@
         text-decoration: underline;
         cursor: pointer;
         &:hover {
-          color: darken($red, 10);
+          color: darken($red, 25);
         }
       }
     }
@@ -116,7 +116,12 @@
   color: $red;
   cursor: pointer;
   &:hover {
-    color: darken($red, 10);
+    color: darken($red, 25);
+    .close {
+      &:before, &:after {
+        background-color: darken($red, 25);
+      }
+    }
   }
   .close {
     margin-right: 5px;

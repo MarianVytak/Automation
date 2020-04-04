@@ -8,10 +8,11 @@
   box-sizing: border-box;
   border-radius: 10px;
   color: $white;
+  transition: .3s;
   &.btn-red {
     background-color: $red;
     &:hover {
-      background-color: darken($red, 5);
+      background-color: darken($red, 15);
     }
     &.btn-outline {
       border: 1px solid $red;

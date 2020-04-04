@@ -2,7 +2,7 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 0;
-  background-color: #e9ecf1;
+  background-color: $bg;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   color: $black;
@@ -28,7 +28,7 @@ body {
   transition: .3s;
   &:hover {
     &:before, &:after {
-      background-color: darken($red, 10);
+      background-color: darken($red, 25);
     }
   }
   &:before, &:after {

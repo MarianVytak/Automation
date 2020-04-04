@@ -66,42 +66,56 @@
 
     <div class="header__bot js-menu" id="header-bot">
         <div class="container">
-            <ul class="header__navigation">
-                <li class="header__navigation_close menu-close" data-target="#header-bot"></li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link active">Вентиляция</a>
-                </li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link">Индивидуальные тепловые пункты</a>
-                </li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link">Противопожарная вентиляция</a>
-                </li>
-                <li class="header__navigation_item header__navigation_search">
-                    <label>
+            <nav class="header__navigation">
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_close menu-close" data-target="#header-bot"></li>
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link active">Вентиляция</a>
+                    </li>
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link">Индивидуальные тепловые пункты</a>
+                    </li>
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link">Противопожарная вентиляция</a>
+                    </li>
+                </ul>
+                <!-- /.header__navigation_list -->
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link">Доставка и оплата</a>
+                    </li>
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link">О компании</a>
+                    </li>
+                    <li class="header__navigation_item">
+                        <a href="#" class="header__navigation_item_link">Контакты</a>
+                    </li>
+                    <li class="header__navigation_search">
                         <input type="search" class="header__navigation_search_input" placeholder="Поиск">
-                        <img class="header__navigation_search_icon" src="../../assets/img/icons/search.png" alt="">
-                    </label>
-                </li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link">Доставка и оплата</a>
-                </li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link">О компании</a>
-                </li>
-                <li class="header__navigation_item">
-                    <a href="#" class="header__navigation_item_link">Контакты</a>
-                </li>
-                <li class="header__navigation_item_mobile">
-                    <a href="mailto:info@gkavtomatika.ru" class="header__navigation_item_mobile_link">info@gkavtomatika.ru</a>
-                </li>
-                <li class="header__navigation_item_mobile">
-                    <a href="tel:+78129850550" class="header__navigation_item_mobile_link">+7 (812) 985-05-50</a>
-                </li>
-                <li class="header__navigation_item_mobile">
-                    <a href="#" class="btn btn-red w-100">Заказать звонок</a>
-                </li>
-            </ul>
+                        <button class="header__navigation_search_btn btn btn-blue">Найти</button>
+                        <div class="header__navigation_search_icon">
+                            <img src="../../assets/img/icons/search-gray.png" alt="">
+                        </div>
+                        <span class="header__navigation_search_close close"></span>
+                    </li>
+                    <li class="header__navigation_item_mobile">
+                        <a href="mailto:info@gkavtomatika.ru" class="header__navigation_item_mobile_link">info@gkavtomatika.ru</a>
+                    </li>
+                    <li class="header__navigation_item_mobile">
+                        <a href="tel:+78129850550" class="header__navigation_item_mobile_link">+7 (812) 985-05-50</a>
+                    </li>
+                    <li class="header__navigation_item_mobile">
+                        <a href="#" class="btn btn-red w-100">Заказать звонок</a>
+                    </li>
+                </ul>
+                <!-- /.header__navigation_list -->
+<!--                <li class="header__navigation_item header__navigation_search">-->
+<!--                    <label>-->
+<!--                        <input type="search" class="header__navigation_search_input" placeholder="Поиск">-->
+<!--                        <img class="header__navigation_search_icon" src="../../assets/img/icons/search.png" alt="">-->
+<!--                    </label>-->
+<!--                </li>-->
+            </nav>
         </div>
         <!-- /.container -->
     </div>

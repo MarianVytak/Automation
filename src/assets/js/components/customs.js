@@ -23,6 +23,9 @@ $(function () {
     menuLink.on('click', function (e) {
         e.preventDefault();
         let thisMenuLink = $(this).attr('data-target');
+        let scrollX = window.scrollX;
+        let scrollY = window.scrollY;
+        window.onscroll = function () { window.scrollTo(scrollX, scrollY); };
         $(thisMenuLink).addClass('active');
         overlay.addClass('active');
         $('html, body').addClass('hidden');
@@ -30,6 +33,7 @@ $(function () {
     menuClose.on('click', function (e) {
         e.preventDefault();
         let thisMenuClose = $(this).attr('data-target');
+        window.onscroll = function () { return; };
         $(thisMenuClose).removeClass('active');
         overlay.removeClass('active');
         $('html, body').removeClass('hidden');
@@ -39,6 +43,18 @@ $(function () {
         $('.js-menu').removeClass('active');
         overlay.removeClass('active');
         $('html, body').removeClass('hidden');
+    });
+
+
+
+    // Desktop Search
+    $('.header__navigation_search_icon').on('click', function (e) {
+        e.preventDefault();
+        $('.header__navigation_search').addClass('active');
+    });
+    $('.header__navigation_search_close').on('click', function (e) {
+        e.preventDefault();
+        $('.header__navigation_search').removeClass('active');
     });
 
 
