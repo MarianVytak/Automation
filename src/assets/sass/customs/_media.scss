@@ -24,4 +24,23 @@
   .hamburger-line {
     height: 2px;
   }
+  .tab-content {
+    padding: 20px 0 30px;
+  }
+  .tab {
+    display: block;
+    padding-bottom: 5px;
+    li {
+      padding: 5px 0;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      a {
+        padding-bottom: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
 }
