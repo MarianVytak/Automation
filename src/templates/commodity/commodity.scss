@@ -109,3 +109,41 @@
   justify-content: flex-start;
   color: $gray;
 }
+
+.commodity__tab {
+  margin-top: 60px;
+}
+
+.commodity__tab_title {
+  font-weight: bold;
+  font-size: 15px;
+  color: $blue;
+}
+
+.commodity__tab_list {
+  padding: 25px 0;
+  color: $blue;
+}
+
+.commodity__tab_list_item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/img/icons/arrow-red.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.commodity__tab_text {
+  font-size: 14px;
+  color: $blue;
+  line-height: 20px;
+}
