@@ -2,12 +2,14 @@
 Table of contents
 
 ## Customs
+## Breadcrumbs
 ## Header
 ## Header 2
 ## Header 3
 ## Ventilation
 ## Filter
 ## Position
+## Commodity
 ## Footer
 *******************/
 
@@ -15,6 +17,10 @@ Table of contents
 /* ## Customs
 ====================*/
 @import "customs/customs";
+
+/* ## Breadcrumbs
+====================*/
+@import "../../templates/breadcrumbs/breadcrumbs";
 
 /* ## Header
 ====================*/
@@ -39,6 +45,10 @@ Table of contents
 /* ## Position
 ====================*/
 @import "../../templates/position/position";
+
+/* ## Commodity
+====================*/
+@import "../../templates/commodity/commodity";
 
 /* ## Footer
 ====================*/

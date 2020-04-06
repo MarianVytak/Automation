@@ -1,0 +1,33 @@
+.breadcrumbs {
+  padding: 20px;
+  background-color: $white;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__list_item {
+  position: relative;
+  margin-right: 20px;
+  font-size: 11px;
+  color: $gray;
+  &:not(:last-child) {
+    &:before {
+      content: '/';
+      position: absolute;
+      top: 0;
+      right: -13px;
+    }
+  }
+}
+
+.breadcrumbs__list_item_link {
+  color: $gray;
+  &:hover {
+    color: darken($gray, 25);
+  }
+}
