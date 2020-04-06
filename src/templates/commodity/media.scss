@@ -60,12 +60,16 @@
     grid-template-columns: 1fr;
     padding-top: 60px;
   }
-  .commodity__img {}
   .commodity__content {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 1;
     grid-row: 3;
     grid-column-end: 2;
   }
   .commodity__info {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 2;
@@ -84,6 +88,10 @@
   .commodity__content_list_item {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  .commodity__content_list_item_desc {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
   }
   .commodity__title {
     font-size: 16px;
