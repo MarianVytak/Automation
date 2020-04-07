@@ -51,6 +51,13 @@
   }
 }
 
+.link-gray {
+  color: $gray;
+  &:hover {
+    color: darken($gray, 25);
+  }
+}
+
 .underline {
   text-decoration: underline;
   &:hover {
