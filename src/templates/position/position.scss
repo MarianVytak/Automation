@@ -157,3 +157,20 @@
 .position__btn_score {
   margin-top: 5px;
 }
+
+.position__discount {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.position__discount_item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.position__discount_label {
+  margin-right: 5px;
+  color: $gray;
+}
