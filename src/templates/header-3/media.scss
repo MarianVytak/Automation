@@ -1,10 +1,21 @@
 @media (max-width: 767.98px) {
   .header-3 {
-    .logo {
-      width: 100px;
+    .header__top {
+      display: block;
     }
-    .logo-text {
-      display: none;
+    .header__top_list {
+      padding: 0;
+    }
+    .header__login_icon {
+      display: block;
+    }
+    .header__login_name {
+      display: block;
+    }
+    .header__login_link {
+      span {
+        display: inline-block;
+      }
     }
   }
 }
