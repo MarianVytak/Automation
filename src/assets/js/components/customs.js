@@ -3,10 +3,10 @@ $(function () {
     'use strict';
 
     // View All
-    let viewAll = $('.view-all');
+    var viewAll = $('.view-all');
     viewAll.on('click', function (e) {
         e.preventDefault();
-        let viewAllText = $(this).text();
+        var viewAllText = $(this).text();
         if (viewAllText === 'Развернуть') {
             $(this).text('Свернуть');
         } else if (viewAllText === 'Свернуть') {
@@ -17,14 +17,14 @@ $(function () {
 
 
     // Menu
-    let menuLink = $('.js-menu-link'),
+    var menuLink = $('.js-menu-link'),
         menuClose = $('.menu-close'),
         overlay = $('.overlay');
     menuLink.on('click', function (e) {
         e.preventDefault();
-        let thisMenuLink = $(this).attr('data-target');
-        let scrollX = window.scrollX;
-        let scrollY = window.scrollY;
+        var thisMenuLink = $(this).attr('data-target');
+        var scrollX = window.scrollX;
+        var scrollY = window.scrollY;
         window.onscroll = function () { window.scrollTo(scrollX, scrollY); };
         $(thisMenuLink).addClass('active');
         overlay.addClass('active');
@@ -32,7 +32,7 @@ $(function () {
     });
     menuClose.on('click', function (e) {
         e.preventDefault();
-        let thisMenuClose = $(this).attr('data-target');
+        var thisMenuClose = $(this).attr('data-target');
         window.onscroll = function () { return; };
         $(thisMenuClose).removeClass('active');
         overlay.removeClass('active');

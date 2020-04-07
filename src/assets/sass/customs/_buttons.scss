@@ -43,3 +43,17 @@
     font-weight: bold;
   }
 }
+
+.link-red {
+  color: $red;
+  &:hover {
+    color: darken($red, 25);
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
