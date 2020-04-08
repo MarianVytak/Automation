@@ -116,6 +116,9 @@
 
 .card__value_btn {
   margin-top: 25px;
+  .btn {
+    padding: 0;
+  }
   .triangle {
     width: 0;
     height: 0;
