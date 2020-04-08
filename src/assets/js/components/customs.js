@@ -60,13 +60,13 @@ $(function () {
 
 
     // Mobile Search
-    $('.header__bot_mobile_search_icon').on('click', function (e) {
+    $('.mobile__menu_search_icon').on('click', function (e) {
         e.preventDefault();
-        $('.header__bot_mobile').addClass('active');
+        $('.mobile__menu').addClass('active');
     });
-    $('.header__bot_mobile_search_close').on('click', function (e) {
+    $('.mobile__menu_search_close').on('click', function (e) {
         e.preventDefault();
-        $('.header__bot_mobile').removeClass('active');
+        $('.mobile__menu').removeClass('active');
     });
 
 });

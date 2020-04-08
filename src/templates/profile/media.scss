@@ -1,0 +1,30 @@
+@media (max-width: 991.98px) {
+  .profile__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .profile__grid_left {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    margin: 0 -15px;
+    padding: 15px;
+    &:before {
+      display: none;
+    }
+  }
+  .profile__grid_right {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .profile__block_list {
+    margin: 15px 0 30px;
+  }
+  .profile__card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
