@@ -8,7 +8,6 @@
   box-sizing: border-box;
   overflow-y: auto;
   display: none;
-  z-index: 3;
 }
 
 .modal__content {
@@ -25,6 +24,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(55, 55, 55, 0.02);
   background-color: $white;
+  z-index: 3;
   .btn {
     height: 40px;
   }
