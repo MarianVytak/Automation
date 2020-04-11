@@ -1,7 +1,7 @@
 {
-  "name": "buybrand",
+  "name": "automation",
   "version": "1.0.0",
-  "description": "BuyBrand",
+  "description": "Automation",
   "author": "MarianVytak",
   "devDependencies": {
     "browser-sync": "^2.23.6",
