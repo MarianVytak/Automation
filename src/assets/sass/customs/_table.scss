@@ -28,6 +28,21 @@
   }
 }
 
+.table__buttons {
+  .table__list {
+    padding: 0 0 15px;
+  }
+  .table__list_item {
+    width: auto;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  .btn {
+    padding: 0 25px;
+  }
+}
+
 .table__search {
   .table__list {
     padding: 15px 0;
