@@ -1,0 +1,18 @@
+.modal__offer-manager_block {
+  display: -ms-grid;
+  -ms-grid-columns: 75px 1fr;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  margin-bottom: 15px;
+  .modal__form_title {
+    -ms-grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+  .modal__form_group {
+    -ms-grid-column: 2;
+  }
+}
