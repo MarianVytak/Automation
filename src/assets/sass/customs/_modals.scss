@@ -215,3 +215,32 @@
 .check-input:checked+.check-box:before {
   opacity: 1;
 }
+
+.modal__thank {
+  .modal__form_title {
+    margin-bottom: 0;
+  }
+}
+
+.modal__thank_subtitle {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 145px;
+    height: 1px;
+    background-color: $red;
+  }
+}
+
+.modal__thank_list_item {
+  color: $blue;
+  span {
+    color: $red;
+  }
+}
