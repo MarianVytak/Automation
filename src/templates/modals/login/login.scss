@@ -1,0 +1,18 @@
+.modal__login {
+  .modal__content {
+    max-width: 310px;
+  }
+  .btn {
+    max-width: none;
+  }
+}
+
+.modal__login_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__login_label {
+  color: $gray;
+}
