@@ -126,7 +126,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(55, 55, 55, 0.02);
   background-color: $white;
-  color: $gray;
+  color: $blue;
   &::placeholder {
     color: $gray;
   }
@@ -142,7 +142,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(55, 55, 55, 0.02);
   background-color: $white;
-  color: $gray;
+  color: $blue;
   cursor: pointer;
 }
 
@@ -156,7 +156,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(55, 55, 55, 0.02);
   background-color: $white;
-  color: $gray;
+  color: $blue;
   resize: none;
   &::placeholder {
     color: $gray;

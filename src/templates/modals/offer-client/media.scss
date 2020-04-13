@@ -1,0 +1,18 @@
+@media (max-width: 767.98px) {
+  .modal__offer-client {
+    .modal__form_group {
+      order: 1;
+      &:nth-child(4) {
+        order: 6;
+        margin-bottom: 0;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+      &:nth-child(6) {
+        order: 4;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
