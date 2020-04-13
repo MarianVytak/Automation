@@ -76,6 +76,22 @@
         color: $red;
       }
     }
+    .modal__form_file {
+      input:valid {
+        color: $green;
+      }
+      input:invalid {
+        color: $red;
+      }
+    }
+    .modal__form_textarea {
+      &:valid {
+        border-color: $green;
+      }
+      &:invalid {
+        border-color: $red;
+      }
+    }
   }
 }
 
@@ -130,7 +146,7 @@
   cursor: pointer;
 }
 
-.modal__textarea {
+.modal__form_textarea {
   width: 100%;
   height: 190px;
   padding: 15px;

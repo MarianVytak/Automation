@@ -6,14 +6,24 @@
       margin-bottom: 20px;
     }
   }
+  .modal__catalog_list_item_img {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
   .modal__catalog_list_item_info {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
     padding-left: 0;
   }
   .modal__catalog_list_item_count {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
     justify-content: flex-start;
     margin-top: 10px;
   }
   .modal__catalog_list_item_buttons {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
     margin-top: 10px;
     .btn {
       width: 145px;
