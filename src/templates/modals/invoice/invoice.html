@@ -1,0 +1,72 @@
+<a href="#modal-invoice" class="btn btn-red js-modal-link">Получить счёт</a>
+
+<div class="modal modal__invoice" id="modal-invoice">
+
+    <div class="modal__content">
+        <div class="modal__close close"></div>
+
+        <div class="title-1">Для выставления счёта, пожалуйста, предоставьте следующие данные</div>
+
+        <div class="modal__subtitle">
+            Если вы планируете пользоваться сервисом часто, рекомендуем
+            <a href="#" class="link-red">зарегистрироваться</a>
+        </div>
+
+        <form class="modal__form needs-validation" novalidate>
+            <div class="modal__invoice_form">
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="ФИО" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="email" class="modal__form_input" placeholder="E-mail" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="tel" class="modal__form_input" placeholder="Телефон" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="ИНН организации" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="БИК" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Расчётный счёт" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Адрес доставки грузов (необязательно)">
+                </label>
+                <div class="modal__form_group">
+                    <div class="modal__invoice_form_file">
+                        <p>
+                            Заполните поля или <br>
+                            <a href="#" class="link-red underline">прикрепите файл</a>
+                            с реквизитами
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__form_block">
+                <div class="modal__w-50">
+                    <div class="modal__form_group">
+                        <label class="modal__form_check">
+                            <input type="checkbox" class="check-input" required checked>
+                            <span class="check-box"></span>
+                            <span class="check-label">Я даю согласие на обработку персональных данных</span>
+                        </label>
+                    </div>
+                    <div class="modal__form_group">
+                        <button class="btn btn-red w-100">Получить счёт</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal__form_block -->
+
+        </form>
+        <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__content -->
+
+    <div class="overlay-modal"></div>
+
+</div>
+<!-- /.modal -->
