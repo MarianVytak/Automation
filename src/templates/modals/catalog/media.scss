@@ -1,0 +1,22 @@
+@media (max-width: 767.98px) {
+  .modal__catalog_list_item {
+    -ms-grid-columns: 70px 1fr;
+    grid-template-columns: 70px 1fr;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  .modal__catalog_list_item_info {
+    padding-left: 0;
+  }
+  .modal__catalog_list_item_count {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .modal__catalog_list_item_buttons {
+    margin-top: 10px;
+    .btn {
+      width: 145px;
+    }
+  }
+}
