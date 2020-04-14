@@ -78,44 +78,41 @@
         border-color: $red;
       }
     }
-  }
-}
-
-.modal__form_check {
-  .check-input:valid+ .check-box {
-    border-color: $green;
-  }
-  .check-input:invalid+ .check-box {
-    border-color: $red;
-  }
-  .check-input:valid+ .check-box+ .check-label {
-    color: $green;
-  }
-  .check-input:invalid+ .check-box+ .check-label {
-    color: $red;
-  }
-}
-
-.modal__form_file {
-  input:valid {
-    color: $green;
-  }
-  input:invalid {
-    color: $red;
-  }
-}
-
-.modal__form_textarea {
-  &:valid {
-    border-color: $green;
-  }
-  &:invalid {
-    border-color: $red;
+    .modal__form_check {
+      .check-input:valid+ .check-box {
+        border-color: $green;
+      }
+      .check-input:invalid+ .check-box {
+        border-color: $red;
+      }
+      .check-input:valid+ .check-box+ .check-label {
+        color: $green;
+      }
+      .check-input:invalid+ .check-box+ .check-label {
+        color: $red;
+      }
+    }
+    .modal__form_file {
+      input:valid {
+        color: $green;
+      }
+      input:invalid {
+        color: $red;
+      }
+    }
+    .modal__form_textarea {
+      &:valid {
+        border-color: $green;
+      }
+      &:invalid {
+        border-color: $red;
+      }
+    }
   }
 }
 
 .modal__form_block {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   &:last-child {
     margin-bottom: 0;
   }
