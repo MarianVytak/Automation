@@ -1,0 +1,48 @@
+<a href="#modal-edit-profile" class="btn btn-red js-modal-link">Редактирование личных данных</a>
+
+<div class="modal modal__edit-profile" id="modal-edit-profile">
+
+    <div class="modal__content">
+        <div class="modal__close close"></div>
+
+        <div class="title-1">Редактирование личных данных</div>
+
+        <form class="modal__form needs-validation" novalidate>
+            <div class="modal__w-50">
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Александров" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Иван" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Евгеньевич" required>
+                </label>
+            </div>
+            <div class="modal__w-50">
+                <label class="modal__form_group">
+                    <input type="tel" class="modal__form_input" placeholder="Телефон" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="tel" class="modal__form_input" placeholder="Доб." required>
+                </label>
+                <div class="modal__form_group">
+                    <label class="modal__form_check">
+                        <input type="checkbox" class="check-input" required checked>
+                        <span class="check-box"></span>
+                        <span class="check-label">Я даю согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal__form_group">
+                    <button class="btn btn-red w-100">Сохранить изменения</button>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__content -->
+
+    <div class="overlay-modal"></div>
+
+</div>
+<!-- /.modal -->
