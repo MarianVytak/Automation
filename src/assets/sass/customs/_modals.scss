@@ -243,6 +243,10 @@
 
 .modal__thank_list_item {
   color: $blue;
+  a {
+    font-weight: bold;
+    color: $blue;
+  }
   span {
     color: $red;
   }
