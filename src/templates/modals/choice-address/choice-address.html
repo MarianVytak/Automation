@@ -1,0 +1,78 @@
+<a href="#modal-choice-address" class="btn btn-red js-modal-link">Укажите данные для формирования счёта</a>
+
+<div class="modal modal__choice-address" id="modal-choice-address">
+
+    <div class="modal__content">
+        <div class="modal__close close"></div>
+
+        <div class="title-1">Укажите данные для формирования счёта</div>
+
+        <div class="modal__subtitle">
+            Для того, чтобы мы смогли выставить вам счёт, выберите, пожалуйста, реквизиты компании и адрес доставки
+        </div>
+
+        <form class="modal__form needs-validation" novalidate>
+            <div class="modal__form_block">
+                <div class="modal__form_title">Реквизиты</div>
+                <div class="modal__w-50">
+                    <label class="modal__form_group">
+                        <select class="modal__form_select">
+                            <option value="ООО “Рога и копыта”">ООО “Рога и копыта”</option>
+                            <option value="ООО “Рога и копыта”">ООО “Рога и копыта”</option>
+                            <option value="ООО “Рога и копыта”">ООО “Рога и копыта”</option>
+                            <option value="ООО “Рога и копыта”">ООО “Рога и копыта”</option>
+                        </select>
+                    </label>
+                    <div class="modal__form_group">
+                        <a href="#" class="btn btn-gray w-100">Добавить новую организацию</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal__form_block -->
+            <div class="modal__form_block">
+                <div class="modal__form_title">Адрес доставки груза</div>
+                <div class="modal__w-50">
+                    <div class="modal__form_group modal__form_group_radio">
+                        <label class="radio">
+                            <input type="radio" name="modal-choice-address" class="radio-input" checked>
+                            <span class="radio-box"></span>
+                        </label>
+                        <label>
+                            <select class="modal__form_select">
+                                <option value="На склад (до терминала)">На склад (до терминала)</option>
+                                <option value="На склад (до терминала)">На склад (до терминала)</option>
+                                <option value="На склад (до терминала)">На склад (до терминала)</option>
+                                <option value="На склад (до терминала)">На склад (до терминала)</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="modal__form_group">
+                        <a href="#" class="btn btn-gray w-100">Добавить новый адрес</a>
+                    </div>
+                </div>
+                <div class="modal__form_group">
+                    <label class="radio">
+                        <input type="radio" name="modal-choice-address" class="radio-input">
+                        <span class="radio-box"></span>
+                        <span class="radio-label">Я ещё не знаю адрес доставки</span>
+                    </label>
+                </div>
+            </div>
+            <!-- /.modal__form_block -->
+            <div class="modal__form_block">
+                <div class="modal__w-50 flex-center">
+                    <div class="modal__form_group">
+                        <button class="btn btn-red w-100">Отправить счёт</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal__form_block -->
+        </form>
+        <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__content -->
+
+    <div class="overlay-modal"></div>
+
+</div>
+<!-- /.modal -->
