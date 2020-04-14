@@ -1,0 +1,78 @@
+<a href="#modal-add-address" class="btn btn-red js-modal-link">Добавить адрес доставки</a>
+
+<div class="modal modal__add-address" id="modal-add-address">
+
+    <div class="modal__content">
+        <div class="modal__close close"></div>
+
+        <div class="title-1">Добавить адрес доставки</div>
+
+        <form class="modal__form needs-validation" novalidate>
+            <div class="modal__w-50">
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Краткое обозначение адреса" required>
+                </label>
+                <div class="modal__form_group">
+                    <label class="modal__form_check">
+                        <input type="checkbox" class="check-input" checked>
+                        <span class="check-box"></span>
+                        <span class="check-label">Использовать как адрес по умолчанию</span>
+                    </label>
+                </div>
+                <label class="modal__form_group">
+                    <select class="modal__form_select">
+                        <option value="Тип доставки">Тип доставки</option>
+                        <option value="Тип доставки 1">Тип доставки 1</option>
+                        <option value="Тип доставки 2">Тип доставки 1</option>
+                        <option value="Тип доставки 3">Тип доставки 3</option>
+                    </select>
+                </label>
+                <label class="modal__form_group">
+                    <select class="modal__form_select">
+                        <option value="Транспортная компания">Транспортная компания</option>
+                        <option value="Транспортная компания 1">Транспортная компания 1</option>
+                        <option value="Транспортная компания 2">Транспортная компания 2</option>
+                        <option value="Транспортная компания 3">Транспортная компания 3</option>
+                    </select>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Город" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Адрес" required>
+                </label>
+                <label class="modal__form_group">
+                    <input type="text" class="modal__form_input" placeholder="Получатель (ФИО)" required>
+                </label>
+                <label class="modal__form_group modal__form_tel">
+                    <input type="tel" class="modal__form_input" placeholder="Телефон" required>
+                    <input type="tel" class="modal__form_input" placeholder="Доб." required>
+                </label>
+            </div>
+            <label class="modal__form_group">
+                <input type="text" class="modal__form_input" placeholder="Паспортные данные (при отправке на физ.лицо)" required>
+            </label>
+            <label class="modal__form_group">
+                <textarea class="modal__form_textarea" placeholder="Комментарий"></textarea>
+            </label>
+            <div class="modal__w-50">
+                <div class="modal__form_group">
+                    <label class="modal__form_check">
+                        <input type="checkbox" class="check-input" required checked>
+                        <span class="check-box"></span>
+                        <span class="check-label">Я даю согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal__form_group">
+                    <button class="btn btn-red w-100">Сохранить адрес</button>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__content -->
+
+    <div class="overlay-modal"></div>
+
+</div>
+<!-- /.modal -->

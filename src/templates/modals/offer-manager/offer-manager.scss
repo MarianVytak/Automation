@@ -1,3 +1,9 @@
+.modal__offer-manager {
+  .modal__form_textarea {
+    height: 190px;
+  }
+}
+
 .modal__offer-manager_block {
   display: -ms-grid;
   -ms-grid-columns: 75px 1fr;
@@ -14,5 +20,6 @@
   }
   .modal__form_group {
     -ms-grid-column: 2;
+    margin-bottom: 0;
   }
 }

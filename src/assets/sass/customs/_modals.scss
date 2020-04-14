@@ -114,9 +114,6 @@
 .modal__form_group {
   display: block;
   margin-bottom: 15px;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .modal__form_input {
@@ -151,7 +148,7 @@
 
 .modal__form_textarea {
   width: 100%;
-  height: 190px;
+  height: 80px;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #d2d2d2;
@@ -159,6 +156,8 @@
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(55, 55, 55, 0.02);
   background-color: $white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
   color: $blue;
   resize: none;
   &::placeholder {
@@ -249,5 +248,16 @@
   }
   span {
     color: $red;
+  }
+}
+
+.modal__form_tel {
+  display: flex;
+  align-items: center;
+  .modal__form_input {
+    &:first-child {
+      width: 200%;
+      margin-right: 15px;
+    }
   }
 }
