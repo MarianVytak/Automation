@@ -5,10 +5,11 @@
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
     transform: translateX(100%);
     width: 350px;
     max-width: 80%;
-    height: 100vh;
+    height: auto;
     min-height: auto;
     padding: 0 15px 30px;
     background-color: $white;

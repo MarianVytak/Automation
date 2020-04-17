@@ -23,9 +23,9 @@ $(function () {
     menuLink.on('click', function (e) {
         e.preventDefault();
         var thisMenuLink = $(this).attr('data-target');
-        var scrollX = window.scrollX;
-        var scrollY = window.scrollY;
-        window.onscroll = function () { window.scrollTo(scrollX, scrollY); };
+        // var scrollX = window.scrollX;
+        // var scrollY = window.scrollY;
+        // window.onscroll = function () { window.scrollTo(scrollX, scrollY); };
         $(thisMenuLink).addClass('active');
         overlay.addClass('active');
         $('html, body').addClass('hidden');
@@ -33,7 +33,7 @@ $(function () {
     menuClose.on('click', function (e) {
         e.preventDefault();
         var thisMenuClose = $(this).attr('data-target');
-        window.onscroll = function () { return; };
+        // window.onscroll = function () { return; };
         $(thisMenuClose).removeClass('active');
         overlay.removeClass('active');
         $('html, body').removeClass('hidden');
