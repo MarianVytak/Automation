@@ -27,6 +27,9 @@
 @media (max-width: 767.98px) {
   .position {
     padding: 25px 10px;
+    .btn {
+      max-width: none;
+    }
   }
   .position__title {
     height: auto;
