@@ -271,7 +271,7 @@
 .modal__form_tel {
   display: flex;
   align-items: center;
-  .modal__form_input {
+  label {
     &:first-child {
       width: 200%;
       margin-right: 15px;

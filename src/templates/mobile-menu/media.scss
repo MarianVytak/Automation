@@ -6,6 +6,16 @@
     grid-template-columns: 1fr 1fr auto;
     padding: 15px 10px;
   }
+  .mobile__menu_search_input {
+    padding: 0 80px 0 10px;
+  }
+  .mobile__menu_search_icon {
+    display: none;
+  }
+  .mobile__menu_search_btn {
+    right: 15px;
+    display: block;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -47,10 +57,15 @@
   .mobile__menu_search_icon {
     right: 3px;
     width: 34px;
+    display: block;
     height: 34px;
   }
   .mobile__menu_search_input {
     padding: 0;
     font-size: 0;
+  }
+  .mobile__menu_search_btn {
+    right: 50px;
+    display: none;
   }
 }

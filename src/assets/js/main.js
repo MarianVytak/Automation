@@ -3,3 +3,4 @@
 //= components/tabs.js
 //= components/modals.js
 //= components/form-validation.js
+//= components/input-file.js
