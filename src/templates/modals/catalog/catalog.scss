@@ -1,3 +1,18 @@
+.modal__catalog {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+  .input-discount {
+    width: 60px;
+    text-align: center;
+  }
+}
+
 .modal__catalog_list {
   margin-top: 25px;
 }
