@@ -28,18 +28,12 @@
     padding: 20px 0 30px;
   }
   .tab {
-    display: block;
-    padding-bottom: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: -10px;
     li {
-      padding: 5px 0;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      a {
-        padding-bottom: 0;
-        &:before {
-          display: none;
-        }
+      &:last-child {
+        padding-right: 10px;
       }
     }
   }
